@@ -22,7 +22,7 @@ function sendEmail(){
             text:"Sample code for checking working of Nodemail"
 
         }
-        
+
         transporter.sendMail(mail_configs, function(error,info){
             if(error){
                 console.log(error);
@@ -32,7 +32,6 @@ function sendEmail(){
         });
     })
 }
-
 
 app.get('/',(req,res)=>{
     sendEmail()
